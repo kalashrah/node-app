@@ -2,6 +2,7 @@ version: '2.30.3'
 services:
   node-app:
     container_name: node-app-container
+    image: ik10/node-docker
     build: .
     volumes:
       - ./src:/app/src:ro
